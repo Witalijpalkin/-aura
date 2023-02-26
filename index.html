@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aura - Коллекция стикеров</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />-->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -29,21 +30,29 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="section hero">
       <div class="container hero__container">
         <div class="hero__text">
           <h1 class="hero__title">
-          Площадка для&nbsp;реализации криптостикеров
+            Площадка для&nbsp;реализации криптостикеров
           </h1>
           <div class="hero__buttons">
-            <a href="" class="hero__btn hero__btn--fill">Купить</a>
-            <a href="" class="hero__btn hero__btn--stroke">Стать автором</a>
+            <a href="" class="hero__btn hero__btn--fill">
+              <span class="hero__btn-text">
+                Купить
+              </span>
+            </a>
+            <a href="" class="hero__btn hero__btn--stroke">
+              <span class="hero__btn-text">
+                Стать автором
+              </span>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="auction">
+    <section class="section auction">
       <div class="container">
         <h2 class="title auction__title">
           Аукцион
@@ -64,35 +73,38 @@
               <div class="auction-bet">
                 <span class="auction-bet__caption">Ставка:</span>
                 <span class="auction-bet__price">0.10 ETH</span>
-                <span class="auction-bet__price$">$351.24</span>
+                <span class="auction-bet__price-dollars">$351.24</span>
               </div>
               <div class="auction-timer">
                 <span class="auction-timer__caption">Окончание через:</span>
-                <div class="auction-timer__content">0.10 ETH</div>
-                <div class="auction-timer__part">
-                  <span class="auction-timer__value">01</span>
-                  <span class="auction-timer__text">Час</span>
-                </div>
-                <div class="auction-timer__part">
-                  <span class="auction-timer__value">48</span>
-                  <span class="auction-timer__text">Мин</span>
-                </div>
-                <div class="auction-timer__part">
-                  <span class="auction-timer__value">47</span>
-                  <span class="auction-timer__text">Сек</span>
-                </div>
+                <div class="auction-timer__content">
+                  <div class="auction-timer__part">
+                    <span class="auction-timer__value">01</span>
+                    <span class="auction-timer__text">Час</span>
+                  </div>
+                  <div class="auction-timer__part">
+                    <span class="auction-timer__value">48</span>
+                    <span class="auction-timer__text">Мин</span>
+                  </div>
+                  <div class="auction-timer__part">
+                    <span class="auction-timer__value">47</span>
+                    <span class="auction-timer__text">Сек</span>
+                  </div>
+                </div>             
               </div>
             </div>
-            <button class="btn btn--fill auction-section__btn">Сделать ставку</button>
+            <button class="btn btn--fill auction-section__btn">
+              <span class="btn__text">Сделать ставку</span>
+              </button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="auction-other">
+    <section class="section auction-other">
       <div class="container">
-        <h2 class="auction-other__title">Другие аукционы</h2>
-        <ul class="auction-othet__list">
+        <h2 class="second__title auction-other__title">Другие аукционы</h2>
+        <ul class="list-reset auction-othet__list">
           <li class="auction-other__item">
             <article class="auction-other-product">
               <div class="auction-other-product__image">
@@ -101,12 +113,13 @@
               <div class="auction-other-product__info">
                 <div class="auction-owner auction-other__owner">
                   <img src="img/Ellipse-1.png" alt="аватар frank" class="auction-owner__avatar">
-                  <span class="auction-owner__nickname">Frank.Nagval</span>
+                  <span class="auction-other-owner__nickname">Frank.Nagval</span>
                 </div>
+                <h3 class="auction-other-product__title">Alien (green) e_e</h3>
+                <span class="auction-other-product__price">0.02 ETH</span>
+                <span class="auction-other-product__time">03 часа 25 мин 23 сек</span>
               </div>
-              <h3 class="auction-other-product__title">Alien (green) e_e</h3>
-              <span class="auction-other-product__price">0.02 ETH</span>
-              <span class="auction-other-product__time">03 часа 25 мин 23 сек</span>
+              
             </article>
           </li>
           <li class="auction-other__item">
@@ -117,12 +130,12 @@
               <div class="auction-other-product__info">
                 <div class="auction-owner auction-other__owner">
                   <img src="img/Ellipse-2.png" alt="аватар CPH_777" class="auction-owner__avatar">
-                  <span class="auction-owner__nickname">CPH_777</span>
+                  <span class="auction-other-owner__nickname">CPH_777</span>
                 </div>
-              </div>
-              <h3 class="auction-other-product__title">CoBRRRa</h3>
-              <span class="auction-other-product__price">0.5 ETH</span>
-              <span class="auction-other-product__time">15 мин 03 сек</span>
+                <h3 class="auction-other-product__title">CoBRRRa</h3>
+                <span class="auction-other-product__price">0.5 ETH</span>
+                <span class="auction-other-product__time">15 мин 03 сек</span>
+              </div>    
             </article>
           </li>
           <li class="auction-other__item">
@@ -133,12 +146,13 @@
               <div class="auction-other-product__info">
                 <div class="auction-owner auction-other__owner">
                   <img src="img/Ellipse-3.png" alt="аватар sUpah_kiLLah" class="auction-owner__avatar">
-                  <span class="auction-owner__nickname">sUpah_kiLLah</span>
+                  <span class="auction-other-owner__nickname">sUpah_kiLLah</span>
                 </div>
+                <h3 class="auction-other-product__title">Diamonds (4)</h3>
+                <span class="auction-other-product__price">0.008 ETH</span>
+                <span class="auction-other-product__time">23 часа 05 мин 08 сек</span>
               </div>
-              <h3 class="auction-other-product__title">Diamonds (4)</h3>
-              <span class="auction-other-product__price">0.008 ETH</span>
-              <span class="auction-other-product__time">23 часа 05 мин 08 сек</span>
+              
             </article>
           </li>
           <li class="auction-other__item">
@@ -149,12 +163,13 @@
               <div class="auction-other-product__info">
                 <div class="auction-owner auction-other__owner">
                   <img src="img/Ellipse-4.png" alt="аватар ttgs" class="auction-owner__avatar">
-                  <span class="auction-owner__nickname">ttgs</span>
+                  <span class="auction-other-owner__nickname">ttgs</span>
                 </div>
+                <h3 class="auction-other-product__title">Holofobia-2</h3>
+                <span class="auction-other-product__price">1.0 ETH</span>
+                <span class="auction-other-product__time">01 час 15 мин 55 сек</span>
               </div>
-              <h3 class="auction-other-product__title">Holofobia-2</h3>
-              <span class="auction-other-product__price">1.0 ETH</span>
-              <span class="auction-other-product__time">01 час 15 мин 55 сек</span>
+
             </article>
           </li>
           <li class="auction-other__item">
@@ -165,12 +180,12 @@
               <div class="auction-other-product__info">
                 <div class="auction-owner auction-other__owner">
                   <img src="img/Ellipse-5.png" alt="аватар Peppppe22" class="auction-owner__avatar">
-                  <span class="auction-owner__nickname">Peppppe22</span>
+                  <span class="auction-other-owner__nickname">Peppppe22</span>
                 </div>
-              </div>
-              <h3 class="auction-other-product__title">Baby Yoda 1</h3>
-              <span class="auction-other-product__price">0.2 ETH</span>
-              <span class="auction-other-product__time">01 час 28 мин 11 сек</span>
+                <h3 class="auction-other-product__title">Baby Yoda 1</h3>
+                <span class="auction-other-product__price">0.2 ETH</span>
+                <span class="auction-other-product__time">01 час 28 мин 11 сек</span>
+              </div>             
             </article>
           </li>
           <li class="auction-other__item">
@@ -181,12 +196,12 @@
               <div class="auction-other-product__info">
                 <div class="auction-owner auction-other__owner">
                   <img src="img/Ellipse-6.png" alt="аватар 1300e1440" class="auction-owner__avatar">
-                  <span class="auction-owner__nickname">1300e1440</span>
+                  <span class="auction-other-owner__nickname">1300e1440</span>
                 </div>
-              </div>
-              <h3 class="auction-other-product__title">alien vs. predator (01)</h3>
-              <span class="auction-other-product__price">0.09 ETH</span>
-              <span class="auction-other-product__time">08 часов 44 мин 43 сек</span>
+                <h3 class="auction-other-product__title">alien vs. predator (01)</h3>
+                <span class="auction-other-product__price">0.09 ETH</span>
+                <span class="auction-other-product__time">08 часов 44 мин 43 сек</span>
+              </div>             
             </article>
           </li>
           <li class="auction-other__item">
@@ -197,12 +212,12 @@
               <div class="auction-other-product__info">
                 <div class="auction-owner auction-other__owner">
                   <img src="img/Ellipse-7.png" alt="аватар Robert_Wward" class="auction-owner__avatar">
-                  <span class="auction-owner__nickname">Robert_Wward</span>
+                  <span class="auction-other-owner__nickname">Robert_Wward</span>
                 </div>
+                <h3 class="auction-other-product__title">IAMDECEPTICON</h3>
+                <span class="auction-other-product__price">0.1 ETH</span>
+                <span class="auction-other-product__time">55 мин 18 сек</span>
               </div>
-              <h3 class="auction-other-product__title">IAMDECEPTICON</h3>
-              <span class="auction-other-product__price">0.1 ETH</span>
-              <span class="auction-other-product__time">55 мин 18 сек</span>
             </article>
           </li>
           <li class="auction-other__item">
@@ -213,48 +228,56 @@
               <div class="auction-other-product__info">
                 <div class="auction-owner auction-other__owner">
                   <img src="img/Ellipse-8.png" alt="аватар ttgs" class="auction-owner__avatar">
-                  <span class="auction-owner__nickname">ttgs</span>
+                  <span class="auction-other-owner__nickname">ttgs</span>
                 </div>
+                <h3 class="auction-other-product__title">Ghostbusterrrrrrrs</h3>
+                <span class="auction-other-product__price">0.09 ETH</span>
+                <span class="auction-other-product__time">18 мин 12 сек</span>
               </div>
-              <h3 class="auction-other-product__title">Ghostbusterrrrrrrs</h3>
-              <span class="auction-other-product__price">0.09 ETH</span>
-              <span class="auction-other-product__time">18 мин 12 сек</span>
             </article>
           </li>
         </ul>
-        <button class="btn btn--stroke auction__more">
-          Все аукционы
-        </button>
+        <div class="btn-center">
+          <button class="btn btn--stroke auction-other__more">
+            <span class="btn__text">
+              Все аукционы
+            </span>
+          </button>
+        </div>
       </div>
     </section>
 
     <section class="new">
       <div class="container">
-        <h2 class="title new_title">Новые стикеры</h2>
-        <div class="new_slider">
+        <h2 class="title new__title">Новые стикеры</h2>
+        <div class="new__slider">
           <div class="swiper-wripper">
             <div class="swiper-slide">
               <div class="new__stickers">
-                <img src="img/Ghost-1.png" alt="ghost1">
-                <img src="img/Ghost-2.png" alt="ghost2">
-                <img src="img/Parental Advisory 1.png" alt="parental">
-              </div>
+                <img src="img/Ghost-1.png" alt="ghost1" class="stick">
+                <img src="img/Ghost-2.png" alt="ghost2" class="stick">
+                <img src="img/Parental Advisory 1.png" alt="parental" class="stick-last">
+              </div>                      
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="subscribe">
-      <div class="container">
+    <section class="section subscribe">
+      <div class="container subscribe__container">
         <h2 class="subscribe__title second__title">
           Будь в&nbsp;курсе новинок! Подпишись на&nbsp;рассылку!
         </h2>
-        <form action="#" class="subscribe-rorm">
+        <form action="#" class="subscribe-form">
           <input type="text" class="form-input subscribe-form__input form-input--dark" placeholder="Имя" name="name">
           <input type="emeil" class="form-input subscribe-form__input form-input--dark" placeholder="E-maıl"
             name="name">
-          <button class="btn btn--fill subscribe-form__btn">Подписаться</button>
+          <button class="btn btn--fill subscribe-form__btn">
+            <span class="btn__text">
+              Подписаться
+            </span>
+          </button>
           <label class="checkbox">
             <input type="checkbox" class="checkbox__input" name="checkbox">
             <span class="checkbox__text">Согласен на обработку персональных данных</span>
@@ -263,11 +286,12 @@
       </div>
     </section>
 
-    <section class="become">
+    <section class="section become">
       <div class="container">
         <h2 class="become__title title">Стать автором</h2>
         <div class="become__content">
-          <p class="become-author__descr"><strong>
+          <div class="become__text">
+            <p class="become__desc-bold"><strong>
               Если ты&nbsp;художник или стремишься им&nbsp;стать&nbsp;&mdash; добро пожаловать к&nbsp;нам!
             </strong></p>
           <p class="become__descr">
@@ -276,25 +300,27 @@
             условия сотрудничества! <b>Удачи!</b>
           </p>
           <img src="img/Frame 31.png" alt="" class="become__decorate" aria-hidden="true">
-        </div>
-        <div class="become__form">
-          <label class="file">
-            <input type="file" class="file__input" accept="image/*">
-            <span class="file__icon"></span>
-            <span class="file__content">Прикрепить работы (.jpeg / .png)</span>
-          </label>
-          <input type="text" class="form-input become__input form-input--light" placeholder="@telegram_nickname" name="telegram_nick">
-          <button class="btn btn--fill become-author__btn">Отправить</button>
+          </div>          
+          <div class="become__form">
+            <label class="file">
+              <input type="file" class="file__input" accept="image/*">
+              <span class="file__icon"></span>
+              <span class="file__content">Прикрепить работы (.jpeg / .png)</span>
+            </label>
+            <input type="text" class="form-input become__input form-input--light" placeholder="@telegram_nickname"
+              name="telegram_nick">
+            <button class="btn btn--fill become-author__btn">Отправить</button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="top">
+    <section class="section top">
       <div class="container">
         <h2 class="title top__title">
           Топ продаж
         </h2>
-        <ul class="top__list">
+        <ul class="list-reset top__list">
           <li class="top__item">
             <article class="top-product">
               <div class="top-product__image">
@@ -358,7 +384,7 @@
                 </div>
                 <h3 class="top-product__title">Infinity_09</h3>
                 <div class="top-product__price">
-                  1.6109 ETH  <span class="top-product__price-dollars">($5,762.32)</span>
+                  1.6109 ETH <span class="top-product__price-dollars">($5,762.32)</span>
                 </div>
               </div>
             </article>
@@ -392,7 +418,7 @@
                 </div>
                 <h3 class="top-product__title">Attntn</h3>
                 <div class="top-product__price">
-                  1.0 ETH  <span class="top-product__price-dollars">($3,577.08)</span>
+                  1.0 ETH <span class="top-product__price-dollars">($3,577.08)</span>
                 </div>
               </div>
             </article>
@@ -402,11 +428,13 @@
     </section>
 
     <section class="top-info">
-      <div class="container">
+      <div class="container top-info__container">
         <h2 class="top-info__title">Для попадания в топ необходимо:</h2>
-        <ul class="top-ifo__list">
-          <li class="top-ifo__item" style="background-image: url('img/top-info-1.svg');">Минимум пять опубликованных работ</li>
-          <li class="top-ifo__item" style="background-image: url('img/top-info-2.svg');">Инвайт трём коллегам по цеху</li>
+        <ul class="list-reset top-ifo__list">
+          <li class="top-ifo__item" style="background-image: url('img/top-info-1.svg');">Минимум пять опубликованных
+            работ</li>
+          <li class="top-ifo__item" style="background-image: url('img/top-info-2.svg');">Инвайт трём коллегам по цеху
+          </li>
           <li class="top-ifo__item" style="background-image: url('img/top-info-3.svg');">Верифицированный аккаунт</li>
         </ul>
       </div>
@@ -415,11 +443,11 @@
 
   <footer class="footer">
     <div class="footer-top">
-      <div class="container">
+      <div class="container footer__container">
         <a class="logo">
           <img src="img/logo.svg" alt="ЛОготип">
         </a>
-        <ul class="footer__list">
+        <ul class="list-reset footer__list">
           <li class="footer__item"><a href="#" class="footer__link">Соглашение</a></li>
           <li class="footer__item"><a href="#" class="footer__link">Лицензия</a></li>
           <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
